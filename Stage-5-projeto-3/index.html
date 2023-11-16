@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="./js/main.js" type="module" defer></script>
+
+  <meta name="description" content="Aplicativo de temporizador, estilo pomodoro">
+  <link rel="icon" href="./assets/images/favicon.svg" type="icon/x-svg">
+  <title>Focus Timer</title>
+</head>
+
+<body>
+  <main>
+    <div class="app">
+      <button id="toggle-mode">
+        <span class="sr-only">Ativar Light Mode!</span>
+        <i class="ph-bold ph-sun"></i>
+        <i class="ph-bold ph-moon"></i>
+      </button>
+
+      <section class="timer flex">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </section>
+
+      <section id="controls" class="flex">
+        <button class="ph-bold ph-play-circle" data-action="ToggleRunning">
+          <span class="sr-only">Iniciar contador</span>
+        </button>
+        <button class="ph-bold ph-pause-circle" data-action="ToggleRunning">
+          <span class="sr-only">Pausar contador</span>
+        </button>
+        <button class="ph-bold ph-timer secondary" data-action="Set">
+          <span class="sr-only">Ajustar Contador</span>
+        </button>
+        <button class="ph-bold ph-stop-circle secondary" data-action="Reset">
+          <span class="sr-only">Zerar contador</span>
+        </button>
+        <button class="ph-bold ph-speaker-none secondary" data-action="ToggleMusic">
+          <span class="sr-only">Ligar musica</span>
+        </button>
+        <button class="ph-bold ph-speaker-high" data-action="ToggleMusic">
+          <span class="sr-only">Parar musica</span>
+        </button>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
